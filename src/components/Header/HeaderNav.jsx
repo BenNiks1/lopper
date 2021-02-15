@@ -1,5 +1,6 @@
 import React from "react";
 import phoneSvg from "../../assets/svg/phone.svg";
+import { MenuBtn } from "./MenuBtn";
 
 const HeaderNav = ({ nav }) => {
   return (
@@ -9,8 +10,8 @@ const HeaderNav = ({ nav }) => {
       </a>
       <nav className="nav">
         <ul className="nav__list">
-          {nav.map((item) => (
-            <li>{item}</li>
+          {nav.map((item, index) => (
+            <li key={`${item}_${index}`}>{item}</li>
           ))}
         </ul>
       </nav>
@@ -20,6 +21,7 @@ const HeaderNav = ({ nav }) => {
           (01)666 - 693 - 456
         </a>
       </div>
+      <MenuBtn />
     </div>
   );
 };
