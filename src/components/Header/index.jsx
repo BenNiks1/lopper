@@ -14,7 +14,7 @@ const Header = () => {
           <div className="header__intro">
             <p className="header__subtitle">what we do?</p>
             <h1 className="header__title">
-              We grow <span>great business</span>
+              We grow <br/><span>great business</span>
             </h1>
           </div>
 
