@@ -272,3 +272,51 @@
     }
   }
 }
+
+/*testimonials 
+==================================================*/
+
+.testimonials {
+  position: relative;
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &__list {
+    margin-top: 113px;
+    .list__item {
+      padding-top: 108px;
+      padding-bottom: 126px;
+      color: $white;
+
+      &-inner {
+        display: flex;
+        align-items: center;
+      }
+      &-title {
+        margin-right: 139px;
+
+        font-family: "Mplus1pMedium";
+        font-size: 27px;
+        line-height: 40px;
+      }
+      &-text {
+        max-width: 362px;
+
+        font-family: "Mplus1p ";
+        font-size: 18px;
+        line-height: 29px;
+      }
+      &:first-child {
+        background: #5e239d;
+      }
+      &:nth-child(2) {
+        background: #30124e;
+      }
+      &:last-child {
+        background: #150433;
+      }
+    }
+  }
+}
