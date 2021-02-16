@@ -12,7 +12,7 @@ const Intro = ({ items }) => {
         </p>
       </Fragment>
       <ul className="intro__list">
-        {items.map((item, index) => (
+        {items.map((item) => (
           <li className="list__item" key={item.id}>
             <i className="list__item-icon">{item.icon}</i>
             <p className="list__item-title">{item.title}</p>
