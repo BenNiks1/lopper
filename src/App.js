@@ -2,9 +2,9 @@ import React, { Fragment } from "react";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Testimonials from "./components/Testimonials";
+import Number from "./components/Numbers";
 
 import { IntroSvg1, IntroSvg2, IntroSvg3 } from "./components/icon";
-
 
 function App() {
   return (
@@ -54,6 +54,25 @@ function App() {
             title: "We build great business",
             text:
               "Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Eleifend donec pretium vulputate sapien nec sagittis.",
+          },
+        ]}
+      />
+      <Number
+        numbers={[
+          {
+            id: "fTw5vGVcwl",
+            number: "15+",
+            text: "nobel prizes",
+          },
+          {
+            id: "dsd1wKzoOW",
+            number: "33",
+            text: "nobel prizes",
+          },
+          {
+            id: "QFNrSDcDtU",
+            number: "12",
+            text: "nobel prizes",
           },
         ]}
       />

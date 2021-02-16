@@ -26,7 +26,7 @@
     letter-spacing: 6px;
     text-transform: uppercase;
 
-    color: #f61067;
+    color: $pink;
   }
 }
 
@@ -56,7 +56,7 @@
     line-height: 118px;
     color: $white;
     span {
-      color: #f61067;
+      color: $pink;
     }
   }
   &__subtitle {
@@ -207,7 +207,7 @@
   .menu__bar-2 {
     width: 27px;
     height: 2px;
-    background-color: #fff;
+    background-color: $white;
     margin: 5px 0;
     transition: 0.4s;
   }
@@ -216,7 +216,7 @@
     float: right;
     width: 18px;
     height: 2px;
-    background-color: #fff;
+    background-color: $white;
 
     transition: 0.4s;
   }
@@ -278,6 +278,7 @@
 
 .testimonials {
   position: relative;
+  margin-bottom: 185px;
   img {
     position: absolute;
     right: 0;
@@ -316,6 +317,50 @@
       }
       &:last-child {
         background: #150433;
+      }
+    }
+  }
+}
+
+/*numbers 
+========================================*/
+
+.numbers {
+  margin-bottom: 118px;
+  &__inner {
+    margin: 0 auto 118px;
+    text-align: center;
+    max-width: 697px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 362px);
+    grid-gap: 30px;
+    justify-content: center;
+    text-align: center;
+    .list__item {
+      span {
+        font-family: "Mplus1pBlack";
+        font-size: 99px;
+        line-height: 118px;
+      }
+      &-text {
+        font-family: "Mplus1pExtraBold";
+        font-size: 12.6px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        color: $black;
+      }
+      &:first-child span {
+        color: $pink;
+      }
+      &:nth-child(2) span {
+        color: #5e239d;
+      }
+      &:last-child span {
+        color: #00f0b5;
       }
     }
   }
