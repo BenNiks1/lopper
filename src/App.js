@@ -3,9 +3,10 @@ import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Testimonials from "./components/Testimonials";
 import Number from "./components/Numbers";
+import Clients from "./components/Clients";
+import Newsletter from "./components/Newsletter";
 
 import { IntroSvg1, IntroSvg2, IntroSvg3 } from "./components/icon";
-import Clients from "./components/Clients";
 
 function App() {
   return (
@@ -99,6 +100,7 @@ function App() {
           },
         ]}
       />
+      <Newsletter/>
     </Fragment>
   );
 }

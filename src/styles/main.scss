@@ -376,6 +376,7 @@
   padding: 144px 0;
   margin-bottom: 180px;
   background: url(../assets/clientsBg.png) center no-repeat;
+  background-size: cover;
   &__inner {
     grid-column-start: 2;
     grid-column-end: 2;
@@ -395,5 +396,77 @@
     grid-template-columns: repeat(2, 165px);
     grid-template-rows: repeat(3, 40px);
     grid-gap: 75px 128px;
+  }
+}
+
+/*newsletter
+============================*/
+
+.newsletter {
+  margin: 0 auto 141px;
+  text-align: center;
+  &__title {
+    margin-bottom: 23px;
+
+    font-family: "Mplus1pMedium";
+    font-size: 45px;
+    line-height: 67px;
+    color: $black;
+  }
+  &__subtitle {
+    margin-bottom: 45px;
+
+    font-family: "Mplus1pMedium";
+    font-size: 18px;
+    line-height: 27px;
+    color: $grey;
+  }
+  &__form {
+    display: inline-block;
+    border-bottom: 3px solid $lightGrey;
+
+    &-input {
+      padding: 20px 143px 13px 17px;
+      border: 0;
+      font-family: "Mplus1pExtraBold";
+      font-size: 18px;
+      line-height: 37px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: $black;
+      &::placeholder {
+        font-family: "Mplus1pExtraBold";
+        font-size: 18px;
+        line-height: 37px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: $grey;
+      }
+    }
+    &-btn {
+      display: inline-flex;
+
+      padding: 21px 27px;
+
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(241, 241, 241, 1) 100%
+      );
+
+      border: 0;
+
+      p {
+        margin-right: 19px;
+
+        font-family: "Mplus1pExtraBold";
+        font-size: 12.6px;
+        line-height: 26px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        color: $pink;
+      }
+    }
   }
 }
