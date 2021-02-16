@@ -5,6 +5,7 @@ import Testimonials from "./components/Testimonials";
 import Number from "./components/Numbers";
 
 import { IntroSvg1, IntroSvg2, IntroSvg3 } from "./components/icon";
+import Clients from "./components/Clients";
 
 function App() {
   return (
@@ -73,6 +74,28 @@ function App() {
             id: "QFNrSDcDtU",
             number: "12",
             text: "nobel prizes",
+          },
+        ]}
+      />
+      <Clients
+        clients={[
+          {
+            img: "client1",
+          },
+          {
+            img: "client2",
+          },
+          {
+            img: "client2",
+          },
+          {
+            img: "client1",
+          },
+          {
+            img: "client1",
+          },
+          {
+            img: "client2",
           },
         ]}
       />

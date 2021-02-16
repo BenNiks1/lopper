@@ -365,3 +365,35 @@
     }
   }
 }
+
+/*clients
+==============================================*/
+
+.clients {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  padding: 144px 0;
+  margin-bottom: 180px;
+  background: url(../assets/clientsBg.png) center no-repeat;
+  &__inner {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  &__title {
+    margin-bottom: 70px;
+
+    font-family: "Mplus1pExtraBold";
+    font-size: 18px;
+    line-height: 37px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 165px);
+    grid-template-rows: repeat(3, 40px);
+    grid-gap: 75px 128px;
+  }
+}
